@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 
 interface Props {
   title: string;
 }
 
-export default function Home({ title = 'Criei um app em' }: Props) {
+export default function Home({ title = "Criei um app em" }: Props) {
   return (
     <div className="container">
       <Head>
@@ -16,12 +16,11 @@ export default function Home({ title = 'Criei um app em' }: Props) {
 
       <main className="main">
         <h1 className="title">
-        { title } <a href="https://nextjs.org">Next.js!</a>
+          {title} <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
-          Get started by editing{' '}
-          <code className="code">pages/index.js</code>
+          Get started by editing <code className="code">pages/index.js</code>
         </p>
 
         <div className="grid">
@@ -61,12 +60,12 @@ export default function Home({ title = 'Criei um app em' }: Props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className="logo">
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
