@@ -33,8 +33,6 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
-  // can edit HTML language
-  // can render next configs and maybe conflicts with styled components
   render() {
     return (
       <Html lang="pt-BR">
